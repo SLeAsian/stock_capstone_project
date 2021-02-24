@@ -1,6 +1,6 @@
 ## Stock Market Movement Prediction Using Graph Convolutional Network
 
-<img src="photos/stock.png" alt="hi" class="inline"/>
+<img src="photos/stock.jpg" alt="hi" class="inline"/>
 
 ### Why the GCN?
 Stock market prediction is a lucrative domain to which machine learning methods can be applied, and recent advancements in the field of artificial intelligence are heavilyaiding this prediction.  Powerful new types of neural network models called graph convolutionalnetworks (GCNs) can effectively learn from data contained within a network structure.  GCNs facilitate ML approaches on graphs similarly to the way traditional CNNs conveniently operate onstructured data like images.  Whereas before one might derive features from the graph’s inherent properties and use those for a machine learning task, one now has access to powerful algorithmsthat can learn directly from the graph itself. Stock markets consist of highly self-dependent data andhave an inherent network structure that can be appropriately exploited using these techniques.
