@@ -1,36 +1,19 @@
-## Welcome to GitHub Pages
+## Stock Market Movement Prediction Using Graph Convolutional Network
 
-You can use the [editor on GitHub](https://github.com/SLeAsian/SLeAsian.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+<img src="photos/stock.png" alt="hi" class="inline"/>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Why the GCN?
+Stock market prediction is a lucrative domain to which machine learning methods can be applied, and recent advancements in the field of artificial intelligence are heavilyaiding this prediction.  Powerful new types of neural network models called graph convolutionalnetworks (GCNs) can effectively learn from data contained within a network structure.  GCNs facilitate ML approaches on graphs similarly to the way traditional CNNs conveniently operate onstructured data like images.  Whereas before one might derive features from the graph’s inherent properties and use those for a machine learning task, one now has access to powerful algorithmsthat can learn directly from the graph itself. Stock markets consist of highly self-dependent data andhave an inherent network structure that can be appropriately exploited using these techniques.
 
-### Introduction of the project
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Data
+For this project, we collected stock price data from the 30 stocks that comprise the Dow JonesMarket Index over a 12-month period (127 trading days) ranging from January 2020 to January 2021 using Yahoo Finance’s API. We chose this data because we did not want to compare pre-pandemic stock prices to post-pandemic prices, as market conditions varied drastically due to the pandemic,but we still wanted to work with as much data as we possibly could given this constraint. Our modelfeatures consist of opening price, low price, high price, and trading amount.  The features are min-max normalized to deal with discrepancies of scale between stock price (in the 100s) and tradingamount (in the 10000s).  Our labels for each day will be 1 if closing price is greater than that day’sopening price and 0 otherwise. We split the data into a 70-30 train-test split for prediction.
 
-```markdown
-Syntax highlighted code block
+### Baseline Model
 
-# Header 1
-## Header 2
-### Header 3
+##### Fully Connected Network
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Body
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/SLeAsian/SLeAsian.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+##### GCN
 
 ### Plan for future
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Some of the possible additional add-on are mostly around the data. Our model simply has the price movement of the past, which does not entail much about the future. In the future, we may incorporate historical news and financial information once given more budeget and time.
