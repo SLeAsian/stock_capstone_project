@@ -15,7 +15,7 @@ We will predict the price movemnt of S&P500 and DOW30 to output the month to mon
 ### Baseline Model
 
 ##### Arima Model
-Arima model serves as a traditional autoregressive integrated moving average regression model. These types of regression were typically used in the stock market prediction, serving as a perfect baseline in our prediction task.
+Arima model serves as a traditional regression prediction. These types of regression were typically used in the stock market prediction, serving as a perfect baseline in our prediction task.
 
 ##### Fully Connected Network
 Fully connected network serves as a baseline from a neural network standpoint. Its maturity since its initial creation allow for a decent comparison of how much better a GCN can perform.
@@ -24,13 +24,13 @@ Fully connected network serves as a baseline from a neural network standpoint. I
 - Neural network that can operate on graph data similarly to how CNNs operate on structured image data
 - Data are not independent from each other,	but have meaningful connections between them that can be leveraged for learning
 
-### Our result
+### Our accuracy result
 
-Arima Model: 49 percent accuracy
+Arima Model: 49 percent
 
 Fully Connected Network: 
 
-Graph Convolutional Network: 60 percent accuracy
+Graph Convolutional Network: 60 percent
 
 As we can see the two baseline models performed with the performance of right around a coinflip, whereas GCN performed slightly better with the same dataset.
 
