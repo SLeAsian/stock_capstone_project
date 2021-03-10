@@ -2,6 +2,8 @@
 
 The purpose of this project is to demonstrate the effectiveness of graph convoutional network on limited data of only price movement in comparison to the other model.
 
+Authors: Sung-Lin Chang, Jason Chau, and Dylan Loe
+
 <img src="photos/stock.jpg" alt="hi" class="inline"/>
 
 ### Why stock market prediction with GCN?
