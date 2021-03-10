@@ -23,7 +23,7 @@ We used graph convolutional network as it can take advantage of its structural i
 
 Example of our correlation/adjacency matrix:
 
-<img src="photos/heatmap.jpg" alt="hi" class="inline"/>
+<img src="photos/heatmap.png" alt="hi" class="inline"/>
 
 ### Our accuracy result
 
