@@ -31,11 +31,11 @@ Example of our correlation/adjacency matrix:
 
 Arima Model: 60 percent
 
-Fully Connected Network: 60 percent
+Fully Connected Network: 53.8 percent
 
-Graph Convolutional Network: 60 percent
+Graph Convolutional Network: 56.22 percent
 
-The ARIMA model performs well at 60% accuracy over the test set. The fully connected network performs similarly to the GCN at 60%, perhaps because our original graph was not of very good quality and doesn't add too much to our models' ability to predict stock movement. This is also accuracy averaged over the days and stocks in our test set, and the average varied greatly between them. There may be certain days that have harder prediction tasks than others.
+This is accuracy averaged over the days and stocks in our test set, and the the accuracy can vary greatly between the days. There may be certain days that have harder prediction tasks than others.
 
 ### Limitation, conclusion and plans for future
 
